@@ -90,6 +90,9 @@
   body{
     overflow-x: hidden;
   }
+    section {
+    overflow-x: hidden;
+  }
   hr {
     height: 0;
     color: inherit;
