@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ar" class="dark" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMS | المدونة</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+
+  <!-- Start navbar -->
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 drop-shadow-md">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="./" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <!-- <img src="assets/images/school-school-svgrepo-com.svg" class="h-8" alt="Flowbite Logo" /> -->
+
+        <span class="self-center mr-2 text-2xl font-semibold whitespace-nowrap dark:text-white">مدرستي <span
+            class="text-[#f39c27]">بلس</span></span>
+      </a>
+      <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+        <button type="button" data-dropdown-toggle="language-dropdown-menu"
+          class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+          <!-- <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900"><path fill="#b22234" d="M0 0h7410v3900H0z"/><path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/><path fill="#3c3b6e" d="M0 0h2964v2100H0z"/><g fill="#fff"><g id="d"><g id="c"><g id="e"><g id="b"><path id="a" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"/><use xlink:href="#a" y="420"/><use xlink:href="#a" y="840"/><use xlink:href="#a" y="1260"/></g><use xlink:href="#a" y="1680"/></g><use xlink:href="#b" x="247" y="210"/></g><use xlink:href="#c" x="494"/></g><use xlink:href="#d" x="988"/><use xlink:href="#c" x="1976"/><use xlink:href="#e" x="2470"/></g></svg> -->
+          <img class="w-5 h-5 rounded-full me-3" src="assets/images/sy.svg" alt="">
+          العربية
+        </button>
+        <!-- Dropdown -->
+        <div
+          class="z-[999999999999999999999999999999999999] absolute hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700"
+          id="language-dropdown-menu">
+          <ul class="py-2 font-medium" role="none">
+            <li>
+              <a href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg"
+                    id="flag-icon-css-us" viewBox="0 0 512 512">
+                    <g fill-rule="evenodd">
+                      <g stroke-width="1pt">
+                        <path fill="#bd3d44"
+                          d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                          transform="scale(3.9385)" />
+                        <path fill="#fff"
+                          d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                          transform="scale(3.9385)" />
+                      </g>
+                      <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)" />
+                      <path fill="#fff"
+                        d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
+                        transform="scale(3.9385)" />
+                    </g>
+                  </svg>
+                  الانكليزية
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    id="flag-icon-css-de" viewBox="0 0 512 512">
+                    <path fill="#ffce00" d="M0 341.3h512V512H0z" />
+                    <path d="M0 0h512v170.7H0z" />
+                    <path fill="#d00" d="M0 170.7h512v170.6H0z" />
+                  </svg>
+                  الالمانية
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    id="flag-icon-css-it" viewBox="0 0 512 512">
+                    <g fill-rule="evenodd" stroke-width="1pt">
+                      <path fill="#fff" d="M0 0h512v512H0z" />
+                      <path fill="#009246" d="M0 0h170.7v512H0z" />
+                      <path fill="#ce2b37" d="M341.3 0H512v512H341.3z" />
+                    </g>
+                  </svg>
+                  الايطالية
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512">
+                    <defs>
+                      <path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z" />
+                    </defs>
+                    <path fill="#de2910" d="M0 0h512v512H0z" />
+                    <use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a" />
+                    <use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a" />
+                    <use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a" />
+                    <use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a" />
+                    <use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a" />
+                  </svg>
+                  الصينية
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button data-collapse-toggle="navbar-language" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100  dark:text-gray-400 dark:hover:bg-gray-700 "
+          aria-controls="navbar-language" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-white bg-[#f39c27] rounded-sm md:bg-transparent md:text-[#f39c27] md:p-0 md:dark:text-[#f39c27]"
+              aria-current="page">الرئيسية</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#f39c27] dark:text-white md:dark:hover:text-[#f39c27] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">الدورات</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#f39c27] dark:text-white md:dark:hover:text-[#f39c27] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">الاختبارات</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#f39c27] dark:text-white md:dark:hover:text-[#f39c27] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">الاحصائيات</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#f39c27] dark:text-white md:dark:hover:text-[#f39c27] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 md:mr-7">ادارة
+              الدورات</a>
+          </li>
+        </ul>
+
+      </div>
+      <button id="theme-toggle" type="button"
+        class="  mt-1 md:order-3 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none   rounded-lg text-sm p-2.5">
+        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+            fill-rule="evenodd" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- End navbar -->
+
+
+
+
+  <!-- Start Course Header -->
+
+    <section class="dark:bg-slate-900 bg-[#f8ecdc] p-10">
+      <div class="course-header max-w-screen-xl mx-auto flex justify-between">
+        <div class="grow dark:text-[#99a1af] flex flex-col justify-center items-center">
+          <h1 class="md:text-3xl text-2xl font-bold text-[#f39c27] mb-5">
+            كيف تختار الدورة الأنسب لمستواك؟
+          </h1>
+          <p class="font-bold mb-5">
+            الكاتب: <span class="">علي عبد الله</span>
+          </p>
+
+          <ul class="flex gap-3">
+            <li>
+              <i class="fa-solid fa-calendar"></i>
+              ايلول \ 2024
+            </li>
+            <li>
+              <i class="fa-brands fa-elementor"></i>
+              تطوير شخصي
+            </li>
+            <li>
+              <i class="fa-solid fa-eye"></i>
+              200 مشاهدة
+            </li>
+          </ul>
+        </div>
+        <div class="md:w-[30%] w-0">
+          <!-- <img class="w-full" src="assets/images/data.png" alt="" /> -->
+        </div>
+      </div>
+    </section>
+    <!-- End Course Header -->
+
+    <!-- Start blog content -->
+        <section class="dark:bg-slate-900 pb-14 p-2.5">
+            <div class="flex max-w-screen-xl mx-auto gap-5 md:flex-row flex-col-reverse">
+                <div class="content grow my-5">
+                    
+
+<nav class="flex" aria-label="Breadcrumb">
+  <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+    <li class="inline-flex items-center">
+      <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#f39c27] dark:text-gray-400 dark:hover:text-[#f39c27]">
+        <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+        </svg>
+        الرئيسية
+      </a>
+    </li>
+    <li>
+      <div class="flex items-center">
+        <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+        </svg>
+        <a href="#" class="ms-1 text-sm font-medium text-gray-700 hover:text-[#f39c27] dark:text-gray-400 dark:hover:text-[#f39c27]">تطوير شخصي</a>
+      </div>
+    </li>
+    <li aria-current="page">
+      <div class="flex items-center">
+        <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+        </svg>
+        <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">كيف تختار الدورة الأنسب لمستواك؟</span>
+      </div>
+    </li>
+  </ol>
+</nav>
+ 
+                    <img class="rounded-[10px] mt-5" src="assets/images/cover.jpg" alt="">
+                    <div class="flex justify-between items-center my-4">
+                          <ul class="flex gap-3 text-gray-500">
+            <li>
+             <i class="fa-solid fa-share-from-square"></i>
+              15 مشاركة
+            </li>
+            <li>
+              <i class="fa-solid fa-thumbs-up"></i>
+              150 اعجاب
+            </li>
+            <li>
+              <i class="fa-solid fa-comments"></i>
+              30 تعليق
+            </li>
+          </ul>
+
+           <div class="flex gap-1.5 mt-4 cursor-pointer text-gray-500">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+                    </div>
+                    <div class="leading-10 text-gray-700 dark:text-gray-300">
+                        <p>مع تزايد الدورات التعليمية عبر الإنترنت، أصبح من الصعب أحيانًا معرفة أي دورة تناسبك بالفعل. فاختيار الدورة الخاطئة قد يضيع وقتك وجهدك دون فائدة، بينما اختيار الدورة الصحيحة قد يكون نقطة تحول مهمة في مسارك المهني.</p>
+                        <h4>1. تقييم مستواك الحالي</h4>
+                        <p>
+
+قبل أن تبدأ رحلة البحث عن دورة جديدة، توقف قليلًا وحدد مستواك. هل أنت مبتدئ تحتاج إلى دورة تأسيسية تبدأ من الصفر؟ أم لديك خبرة متوسطة وتبحث عن محتوى متقدم يطور مهاراتك؟ معرفة مستواك تساعدك على تصفية الكثير من الخيارات غير المناسبة.</p>
+                        <h4>2. حدد أهدافك بوضوح</h4>
+                        <p>اسأل نفسك: لماذا أريد هذه الدورة؟ هل الهدف هو تعلم مهارة جديدة من أجل الهواية؟ أم من أجل الحصول على وظيفة أفضل أو ترقية في العمل؟ أم لتحسين مشروعك الشخصي؟ كل هدف سيقودك نحو نوع مختلف من الدورات.</p>
+                        <h4>3. قراءة وصف المحتوى</h4>
+                        <p>الوصف التفصيلي للدورة هو المفتاح لمعرفة ما إذا كانت مناسبة لك. انتبه جيدًا لما ستتعلمه في كل وحدة دراسية، وتأكّد من أن المواضيع ليست متكررة لما تعرفه مسبقًا، وأنها تقدم قيمة مضافة لك.</p>
+                        <h4>4. التحقق من خبرة المدرب</h4>
+                        <p>المدرب هو العنصر الأهم في نجاح الدورة. ابحث عن خلفيته العلمية أو خبرته العملية، وشاهد أسلوبه في الشرح إن كان متاحًا. المدرب الجيد يستطيع تبسيط المواضيع المعقدة وجعلها ممتعة.</p>
+                        <h4>5. الاطلاع على آراء الطلاب</h4>
+                        <p>لا تعتمد فقط على الوصف الرسمي للدورة، بل اقرأ مراجعات وآراء الطلاب السابقين. هذه الآراء غالبًا ما تكشف عن نقاط القوة والضعف، وتساعدك على اتخاذ قرار واقعي بعيدًا عن التسويق.</p>
+                        <h4>6. تجربة الدروس المجانية</h4>
+                        <p>كثير من المنصات تتيح مشاهدة مقاطع مجانية قبل شراء الدورة. استغل هذه الفرصة للتأكد من أسلوب الشرح، جودة المادة، وملاءمتها لطريقتك في التعلم.</p>
+                        <h4>7. الموازنة بين الوقت والتكلفة</h4>
+                        <p>لا تنجذب فقط للسعر المنخفض أو العروض المؤقتة. اسأل نفسك: هل هذه الدورة تستحق استثماري في الوقت والمال؟ وهل يمكنني الالتزام بعدد الساعات المطلوبة لإكمالها؟</p>
+                        <p>في النهاية، تذكر أن الدورة الأنسب ليست الأغلى ولا الأشهر دائمًا، بل هي تلك التي تلبي احتياجاتك الحالية وتدفعك خطوة للأمام نحو هدفك.</p>
+                       
+                    </div>
+                </div>
+                <div class="wedgit md:w-[30%] w-full md:mt-15 mt-0 shrink-0 bg-gray-50 dark:bg-slate-800 h-full rounded-b-xl p-2.5 md:sticky relative top-0">
+                   <div class="all-cat">
+                     <h2 class="text-xl mb-1.5 dark:text-gray-200">كافة التصنيفات</h2>
+                    <hr class="border-amber-400 mb-2">
+                    <div class="categories">
+                        <ul class="space-y-1 dark:text-gray-300">
+                            <li class="cursor-pointer hover:text-[#f39c27]">تصميم</li>
+                            <li class="cursor-pointer hover:text-[#f39c27]">برمجة</li>
+                            <li class="cursor-pointer hover:text-[#f39c27]">تسويق</li>
+                            <li class="cursor-pointer hover:text-[#f39c27]">أعمال</li>
+                            <li class="cursor-pointer hover:text-[#f39c27]">لغات</li>
+                            <li class="cursor-pointer hover:text-[#f39c27]">ذكاء اصطناعي</li>
+                            <li class="cursor-pointer hover:text-[#f39c27]">علوم البيانات</li>
+                            <li class="cursor-pointer hover:text-[#f39c27]">تطوير شخصي</li>
+                          
+                        </ul>
+                   </div>
+
+
+                     <div class="all-cat">
+                     <h2 class="mt-2 text-xl  mb-1.5 dark:text-gray-200">احدث المقالات التصنيفات</h2>
+                    <hr class="border-amber-400 mb-2 ">
+                    <div class="categories space-y-2">
+                       <div class="flex cursor-pointer items-center gap-2 bg-gray-100 dark:bg-slate-700 p-2 rounded-md">
+                         <div class="">
+                            <h2 class="mb-1 dark:text-gray-200">5 نصائح فعالة لتنظيم وقت الدراسة</h2>
+                            <span class="dark:text-gray-400">
+                                 <i class="fa-solid fa-calendar "></i>
+                                 ايلول \ 2024
+                            </span>
+                        </div>
+                           <img class="w-28 h-28 object-cover rounded-xl" src="assets/images/blog1.png" alt="">
+                          
+                       </div>
+                       <div class="flex cursor-pointer items-center gap-2 bg-gray-100 dark:bg-slate-700 p-2 rounded-md">
+                         <div>
+                            <h2 class="mb-1 dark:text-gray-200">لماذا التعلم الإلكتروني هو مستقبل التعليم؟</h2>
+                            <span class="dark:text-gray-400">
+                                 <i class="fa-solid fa-calendar "></i>
+                                 ايلول \ 2024
+                            </span>
+                        </div>
+                           <img class="w-28 h-28 object-cover rounded-xl" src="assets/images/blog2.png" alt="">
+                          
+                       </div>
+                       <div class="flex cursor-pointer items-center gap-2 bg-gray-100 dark:bg-slate-700 p-2 rounded-md">
+                         <div>
+                            <h2 class="mb-1 dark:text-gray-200">كيف تختار الدورة الأنسب لمستواك؟</h2>
+                            <span class="dark:text-gray-400">
+                                 <i class="fa-solid fa-calendar "></i>
+                                 ايلول \ 2024
+                            </span>
+                        </div>
+                           <img class="w-28 h-28 object-cover rounded-xl" src="assets/images/blog3.png" alt="">
+                          
+                       </div>
+                       <div class="flex cursor-pointer items-center gap-2 bg-gray-100 dark:bg-slate-700 p-2 rounded-md">
+                         <div>
+                            <h2 class="mb-1 dark:text-gray-200">لماذا التعلم الإلكتروني هو مستقبل التعليم؟</h2>
+                            <span class="dark:text-gray-400">
+                                 <i class="fa-solid fa-calendar "></i>
+                                 ايلول \ 2024
+                            </span>
+                        </div>
+                           <img class="w-28 h-28 object-cover rounded-xl" src="assets/images/blog2.png" alt="">
+                          
+                       </div>
+                   </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- End blog content -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Start Footer -->
+  <footer class="bg-slate-900   dark:border-t-1 border-[#f39c27]">
+    <div class="headline-b max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-3">
+      <div class="f-section text-gray-300 mb-3 md:mb-0">
+        <h3 class="text-xl font-bold mb-5">مدرستي <span class="text-[#f39c27]">بلس</span></h3>
+        <p class="leading-9 w-full md:w-[80%]">
+          منصتنا التعليمية وُجدت لتكون جسرًا بين المعرفة والمهارة. نركز على تقديم دورات تقنية عالية الجودة، ومقالات
+          متخصصة في مجالات البرمجة، التصميم، الذكاء الاصطناعي، وريادة الأعمال.
+        </p>
+      </div>
+      <div class="f2-section text-gray-300 mb-3 md:mb-0">
+        <h3 class="text-xl font-bold mb-5">روابط سريعة</h3>
+        <ul class="space-y-2 ">
+          <li><a href="#" class="hover:text-[#f39c27]">الرئيسية</a></li>
+          <li><a href="#" class="hover:text-[#f39c27]">الكورسات</a></li>
+          <li><a href="#" class="hover:text-[#f39c27]">المقالات</a></li>
+          <li><a href="#" class="hover:text-[#f39c27]">من نحن</a></li>
+          <li><a href="#" class="hover:text-[#f39c27]">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div class="f3-section text-gray-300 mb-3 md:mb-0">
+        <h3 class="text-xl font-bold mb-5">كورسات مميزة</h3>
+        <ul class="space-y-2 ">
+          <li><a href="#" class="hover:text-[#f39c27]">تطوير الويب</a></li>
+          <li><a href="#" class="hover:text-[#f39c27]">الذكاء الاصطناعي</a></li>
+          <li><a href="#" class="hover:text-[#f39c27]">تحليل البيانات</a></li>
+          <li><a href="#" class="hover:text-[#f39c27]">الأمن السيبراني</a></li>
+          <li><a href="#" class="hover:text-[#f39c27]">تطوير تطبيقات الموبايل</a></li>
+        </ul>
+      </div>
+
+      <div class="f4-sction text-gray-300 mb-3 md:mb-0">
+        <h3 class="text-xl font-bold mb-5"> اشترك في نشرتنا البريدية</h3>
+        <form class="flex flex-col items-center gap-3">
+          <input type="email" placeholder="أدخل بريدك الإلكتروني"
+            class="flex-1 w-full px-4 py-2 rounded-lg  text-white focus:outline-none border-1 border-[#f39c27] caret-[#f39c27]"
+            required>
+          <button type="submit"
+            class="w-full px-6 py-2  bg-[#f39c27] cursor-pointer  text-white font-semibold rounded-lg transition">
+            اشترك الآن
+          </button>
+        </form>
+      </div>
+
+    </div>
+    <!-- Bottom Bar -->
+    <div class="mt-5 border-t border-gray-700 pt-4 pb-4 text-center text-gray-500 text-sm">
+      © 2025 مدرستي <span class="text-[#f39c27]">بلس</span> . جميع الحقوق محفوظة.
+    </div>
+  </footer>
+
+  <!-- End Footer -->
+
+
+
+  <!-- JS -->
+   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
